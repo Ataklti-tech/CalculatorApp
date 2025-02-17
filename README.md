@@ -34,4 +34,4 @@ This simple, theme-switching calculator is built using **HTML, CSS, and JavaScri
 
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/your-username/calculator-app.git
+git clone https://github.com/Ataklti-tech/CalculatorApp
