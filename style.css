@@ -1,0 +1,252 @@
+:root {
+  /* Theme 1 */
+  /* Width */
+  --width-mobile: 375px;
+  --width-desktop: 1400px;
+  /* Background colors */
+  --dark-blue-main: hsl(222, 26%, 31%);
+  --dark-blue-toggle: hsl(223, 31%, 20%);
+  --dark-blue-screen: hsl(224, 36%, 15%);
+
+  /* Keys */
+  --dark-blue-background: hsl(223, 20%, 53%);
+  --dark-blue-shadow: hsl(224, 28%, 35%);
+  --red-background: hsl(6, 63%, 50%);
+  --red-shadow: hsl(6, 70%, 34%);
+  --light-grayish-background: hsl(30, 25%, 89%);
+  --grayish-orange-shadow: hsl(28, 16%, 65%);
+
+  /* Texts */
+  --dark-grayish-yellow: hsl(60, 10%, 19%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Theme 2 */
+  /* Background */
+  --light-gray: hsl(0, 0%, 90%);
+  --grayish-red: hsl(0, 5%, 81%);
+  --ver-light-gray: hsl(0, 0%, 93%);
+
+  /* keys */
+  --moderate-cyan-background: hsl(185, 42%, 37%);
+  --dark-cyan-shadow: hsl(185, 58%, 25%);
+  --orange-toggle-background: hsl(25, 98%, 40%);
+  --dark-orange-shadow: hsl(25, 99%, 27%);
+  --light-grayish-yellow-background: hsl(45, 7%, 89%);
+  --dark-grayish-orange-shadow: hsl(35, 11%, 61%);
+
+  /* Text */
+  --dark-grayish-yellow-2: hsl(60, 10%, 19%);
+
+  /* Theme 3 */
+  /* Background */
+  --dark-violet-background: hsl(268, 75%, 9%);
+  --dark-violet-toggle: hsl(268, 71%, 12%);
+
+  /* Keys */
+  --dark-violet-key-background: hsl(281, 89%, 26%);
+  --vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+  --cyan-background-key-toggle: hsl(176, 100%, 44%);
+  --cyan-key-shadow: hsl(177, 92%, 70%);
+  --very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+  /* Text */
+  --light-yellow-text: hsl(52, 100%, 62%);
+  --very-dark-blue: hsl(198, 20%, 13%);
+
+  /* fonts */
+  --font-size-numbers: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-blue-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 34%;
+  height: 80%;
+  padding: 10px 10px;
+}
+.row_1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 9%;
+  border-radius: 8px;
+}
+.row_1 p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+}
+.row_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.row_2 #input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--dark-blue-screen);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: var(--font-size-numbers);
+  font-weight: 700;
+  text-align: right;
+  padding: 0 15px;
+}
+.row_3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  width: 100%;
+  height: 68%;
+  border-radius: 8px;
+  margin-top: 14px;
+  place-items: center;
+  padding: 15px;
+  background-color: var(--dark-blue-toggle);
+}
+.row_3 button {
+  background-color: var(--light-grayish-background);
+  color: var(--dark-blue-main);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  font-size: 25px;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  box-shadow: 0px 3px 0px 0px var(--grayish-orange-shadow);
+  border: none;
+}
+.row_3 button:hover {
+  background-color: var(--white);
+}
+button.span-two {
+  grid-column: span 2; /* Span 2 columns */
+}
+button#del {
+  background-color: var(--dark-blue-background);
+  color: var(--white);
+  box-shadow: 0px 4px 0px 0px var(--dark-blue-shadow);
+}
+button#del:hover,
+button#reset:hover {
+  background-color: #a6b0ca;
+}
+button#reset {
+  background-color: var(--dark-blue-background);
+  color: var(--white);
+  box-shadow: 0px 4px 0px 0px var(--dark-blue-shadow);
+}
+button#equal {
+  background-color: var(--red-background);
+  color: var(--white);
+  box-shadow: 0px 4px 0px 0px var(--red-shadow);
+}
+.row_1 p {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+.calc_text {
+  color: var(--white);
+  font-size: 20px;
+}
+.row_1 .theme_changer {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+}
+.theme {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.toggle_checkbox {
+  display: none;
+}
+.toggle_switch {
+  width: 60px;
+  height: 20px;
+  background-color: var(--dark-blue-toggle);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  transition: all 2s ease;
+}
+.toggle_switch::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  background-color: var(--orange-toggle-background);
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Middle position */
+.toggle_switch.middle::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Making my app Responsive with media queries */
+@media (min-width: 768px) and (max-width: 1400px) {
+  .container {
+    width: 34%;
+    height: 80%;
+  }
+}
+@media (834px >= width >= 480px) {
+  .container {
+    width: 60%;
+    height: 80%;
+  }
+}
+@media (width <= 480px) {
+  .container {
+    width: 100%;
+    height: 90%;
+  }
+}
