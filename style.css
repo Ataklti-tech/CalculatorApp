@@ -230,6 +230,10 @@ button#equal {
   left: 50%;
   transform: translateX(-50%);
 }
+/* Right position */
+.toggle_switch.right::before {
+  left: 42px;
+}
 
 /* Making my app Responsive with media queries */
 @media (min-width: 768px) and (max-width: 1400px) {
