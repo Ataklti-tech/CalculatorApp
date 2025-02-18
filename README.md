@@ -1,7 +1,7 @@
 The project title is - "Simple/Basic Arithmetic CalculatorApp" 
 # Calculator App
 
-![Calculator Screenshot](screenshot.png)
+![Calculator Screenshot](images/themeOne.jpg)
 
 ## 📌 Overview
 
@@ -28,7 +28,7 @@ This simple, theme-switching calculator is built using **HTML, CSS, and JavaScri
 
 | Dark Theme | Light Theme | Purple Theme |
 |------------|------------|--------------|
-| ![Dark Theme](dark-theme.png) | ![Light Theme](light-theme.png) | ![Purple Theme](purple-theme.png) |
+| ![Dark Theme](images/themeTwo.jpg) | ![Light Theme](images/themeTwo.jpg) | ![Purple Theme](images/themeThree.jpg) |
 
 ## 📥 Installation & Usage
 
